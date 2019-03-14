@@ -42,10 +42,16 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: #333;
+  text-decoration: none;
 }
-a:active,
+a:active{
+  outline-width: 0;
+  color: chartreuse;
+}
 a:hover {
   outline-width: 0;
+  color: coral
 }
 abbr[title] {
   border-bottom: none;
