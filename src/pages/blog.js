@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 import { graphql, Link} from "gatsby";
-
 const BlogPage = ({data}) => (
   <Layout>
      <div>
@@ -20,7 +19,6 @@ const BlogPage = ({data}) => (
             </div>
         ))}
      </div>
-    
   </Layout>
 )
 export const PageQuery = graphql`
