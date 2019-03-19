@@ -13,7 +13,7 @@ const BlogPage = ({data}) => (
                 <small>posted By {post.node.frontmatter.author} on {post.node.frontmatter.date}</small>
                 <br />
                 <br />
-                <Link to={post.node.frontmatter.path}>Read More</Link>
+                <Link to={post.node.fields.slug}>Read More</Link>
                 <br />
                 <br />
                 <hr />
@@ -28,8 +28,10 @@ query BlogIndexQuery{
     allMarkdownRemark {
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
-            path
             date
             title
             shortscript
